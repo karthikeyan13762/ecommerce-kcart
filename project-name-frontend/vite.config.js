@@ -11,8 +11,8 @@ export default defineConfig({
   // },
   server: {
     proxy: {
-      "/api": "http://127.0.0.1:5000",
-      "/upload": "http://127.0.0.1:5000",
+      "/api": "https://ecommerce-kcart8.onrender.com",
+      "/upload": "https://ecommerce-kcart8.onrender.com",
     },
   },
 });
