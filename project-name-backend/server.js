@@ -31,12 +31,18 @@ const app = express();
 //https://stackoverflow.com/questions/57009371/access-to-xmlhttprequest-at-from-origin-localhost3000-has-been-blocked
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.header(
+    "Access-Control-Allow-Origin",
+    "https://ecommerce-kcart.onrender.com"
+  );
   next();
 });
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5173"],
+    origin: [
+      "https://ecommerce-kcart.onrender.com",
+      "https://ecommerce-kcart.onrender.com",
+    ],
     methods: "GET, POST, PATCH, DELETE, PUT",
     credentials: true,
   })
