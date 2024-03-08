@@ -41,6 +41,7 @@ function ShippingScreen() {
                   placeholder="Enter your address"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
+                  required
                 />
               </div>
               <div className="form-group">
@@ -54,6 +55,7 @@ function ShippingScreen() {
                   placeholder="Enter your city"
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
+                  required
                 />
               </div>
               <div className="form-group">
@@ -67,6 +69,7 @@ function ShippingScreen() {
                   placeholder="Enter your postal code"
                   value={postalCode}
                   onChange={(e) => setPostalCode(e.target.value)}
+                  required
                 />
               </div>
               <div className="form-group">
@@ -80,6 +83,7 @@ function ShippingScreen() {
                   placeholder="Enter your country"
                   value={country}
                   onChange={(e) => setCountry(e.target.value)}
+                  required
                 />
               </div>
               <button className="btn btn-primary mt-3" onClick={handleSubmit}>
