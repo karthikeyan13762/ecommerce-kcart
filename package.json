@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"cd project-name-frontend && npm run dev\" \"cd project-name-backend && npm run dev\" ",
-    "client":"npm run dev --prefix project-name-frontend",
+    "client": "npm run dev --prefix project-name-frontend",
     "start": "node project-name-backend/server",
     "server": "nodemon project-name-backend/server",
     "data:import": "node project-name-backend/seeder",
     "data:destroy": "node project-name-backend/seeder -d",
-    "build":"npm install && npm install --prefix project-name-frontend && npm run build --prefix project-name-frontend "
+    "build": "npm install && npm install --prefix project-name-frontend && npm run build --prefix project-name-frontend "
   },
   "keywords": [],
   "author": "",
@@ -32,5 +32,8 @@
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "stripe": "^14.19.0"
+  },
+  "devDependencies": {
+    "vite": "^5.1.5"
   }
 }
