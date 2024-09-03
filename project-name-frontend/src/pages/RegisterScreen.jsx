@@ -104,14 +104,7 @@ function RegisterScreen() {
               >
                 Register
               </button>
-              {/* <button
-                type="button"
-                className="btn btn-danger mt-4 ml-3 ms-2"
-                // onClick={handleGoogleAuth}
-                disabled
-              >
-                Sign up with Google
-              </button> */}
+
               {isLoading && <Spinner />}
             </form>
             <p className="mt-4">
