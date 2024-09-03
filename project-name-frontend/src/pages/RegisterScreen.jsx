@@ -104,7 +104,7 @@ function RegisterScreen() {
               >
                 Register
               </button>
-              <p>" "</p>
+              <p>test</p>
               {isLoading && <Spinner />}
             </form>
             <p className="mt-4">
