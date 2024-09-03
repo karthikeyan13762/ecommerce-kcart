@@ -113,14 +113,14 @@ function LoginScreen() {
               >
                 Login
               </button>
-              <button
+              {/* <button
                 type="submit"
                 className="btn btn-danger mt-4 ml-3 ms-2"
                 // onClick={handleGoogleAuth}
                 disabled
               >
                 Sign in with Google
-              </button>
+              </button> */}
               {isLoading && <Spinner />}
             </form>
             <p className="mt-4">
